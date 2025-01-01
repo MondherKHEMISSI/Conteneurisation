@@ -17,13 +17,17 @@ services:
       - '~/gitlab/data:/var/opt/gitlab'
     networks:
       gitlab:
-        ipv4_address: "___________"
+<<<<<<< HEAD
+        ipv4_address: "__________"
+>>>>>>> refs/remotes/origin/main
 
 networks:
   gitlab:
     ipam:
       driver: default
       config:
-        - subnet: "___________"
+<<<<<<< HEAD
+        - subnet: ___________
+>>>>>>> refs/remotes/origin/main
       
 
