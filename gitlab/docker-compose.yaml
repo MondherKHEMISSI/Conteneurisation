@@ -3,10 +3,10 @@ services:
   gitlab:
     image: 'gitlab/gitlab-ce:latest'
     restart: always
-    hostname: 'mondher.gitlab.com'
+    hostname: 'example.gitlab.com'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
-        external_url 'https://mondher.gitlab.com'
+        external_url 'https://example.gitlab.com'
     ports:
       - '80:80'
       - '443:443'
@@ -17,13 +17,13 @@ services:
       - '~/gitlab/data:/var/opt/gitlab'
     networks:
       gitlab:
-        ipv4_address: "10.17.17.17"
+        ipv4_address: "__________"
 
 networks:
   gitlab:
     ipam:
       driver: default
       config:
-        - subnet: 10.17.17.0/24
+        - subnet: ___________
       
 
